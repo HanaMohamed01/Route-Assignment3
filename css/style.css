@@ -15,44 +15,46 @@ body {
 
 .navbar span,
 .navbar img,
-p,
-.links,
 .hero__image,
 .hero__content {
   float: left;
+}
+
+.links {
+  float: right;
 }
 
 .navbar {
   width: 100%;
   height: 70px;
   position: fixed;
+  z-index: 5;
   top: 0;
   background-color: #f5f3ff;
   border-bottom: 1px solid #ddd6ff;
 }
 
 .navbar p {
-  width: 50%;
+  width: 100%;
   font-size: 25px;
   font-weight: 600;
 }
 
 .navbar .links {
-  margin-top: 14px;
   width: 45%;
-  margin-left: 400px;
 }
 
 .navbar .icon {
-  margin-top: -3px;
-  width: 30%;
+  width: 22%;
 }
 
 .navbar .links ul {
+  margin-top: -48px;
   list-style-type: none;
 }
 
 .navbar .links a {
+  margin-top: 0;
   text-decoration: none;
   margin-right: 25px;
   color: black;
@@ -64,13 +66,15 @@ p,
 
 .navbar .icon img {
   background-color: #8e51ff;
-  padding: 2%;
+  padding: 3%;
   border-radius: 5px;
   width: 7%;
-  margin: 20px 15px;
+  margin-right: 10px;
+  margin-top: -4px;
 }
 
 .hero {
+  padding-block: 90px;
   position: relative;
   margin-top: 180px;
 }
@@ -95,7 +99,7 @@ p,
 .hero .hero__image p {
   position: absolute;
   left: 40px;
-  top: 25px;
+  top: 120px;
   background-color: #8e51ff;
   color: white;
   padding: 7px;
@@ -200,4 +204,132 @@ p,
 .hero .hero__content .parag_above_button {
   margin-bottom: 30px;
   color: #313131;
+}
+
+.how_we_compare {
+  background-color: #f7f5ff;
+  padding-block: 80px;
+}
+
+.how_we_compare .compare_title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.how_we_compare .compare_title h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.how_we_compare .compare_title span {
+  color: #916bfa;
+}
+
+.how_we_compare .table_compare table {
+  margin: auto;
+  width: 85%;
+  padding: 60px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: #d3d5d9 solid 1px;
+}
+
+.how_we_compare .table_compare table td {
+  border-bottom: 1px rgb(233, 226, 226) solid;
+  padding: 10px;
+}
+
+.bold_size_table {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.center_text_table {
+  text-align: center;
+}
+
+.font_bold {
+  font-weight: 600;
+}
+
+.font_color_orange {
+  color: #e35005;
+}
+
+.table_coloum_design {
+  position: absolute;
+  background-color: #ede9fe;
+  border-radius: 20px;
+  font-weight: 600;
+  height: 200px;
+  width: 300px;
+  z-index: 0;
+}
+
+tr td:nth-child(2) {
+  border-radius: 20p;
+  background-color: #ede9fe;
+  font-weight: 600;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
+}
+.table_our_product {
+  background-color: #8d50ff;
+  color: white;
+  padding: 5px;
+}
+
+.border_radius_top {
+  border-radius: 20px 20px 0 0;
+}
+
+.border_radius_bottom {
+  border-radius: 0 0 20px 20px;
+}
+
+.font_color_violent {
+  color: #8d51ff;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.how_we_compare .table_compare thead p:nth-child(2) {
+  font-size: 14px;
+}
+
+.table_our_product {
+  color: #8d50ff;
+}
+
+.winner {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px 25px;
+  width: 280px;
+  margin: 50px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e5e5;
+}
+
+.winner img {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.winner .title_winner {
+  float: left;
+}
+
+.winner .title_winner h3 {
+  color: #00a651;
+  font-size: 18px;
+  margin: 0;
+}
+
+.winner .title_winner p {
+  color: #00a651;
+  font-size: 14px;
+  margin: 3px 0 0;
 }
