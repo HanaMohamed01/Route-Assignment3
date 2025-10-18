@@ -25,13 +25,20 @@ body {
 .rating_overall .quality_rating,
 .winner img,
 .winner .title_winner,
-.setup_cards {
+.setup_cards,
+.winner img,
+.winner .title_winner,
+.footer_bottom p,
+.footer_logo img,
+.footer_col,
+.footer_logo {
   float: left;
 }
 
 .links,
 .status_profile,
-.rating_cards {
+.rating_cards,
+.footer_payment {
   float: right;
 }
 
@@ -39,7 +46,7 @@ body {
   width: 100%;
   height: 70px;
   position: fixed;
-  z-index: 5;
+  z-index: 50;
   top: 0;
   background-color: #f5f3ff;
   border-bottom: 1px solid #ddd6ff;
@@ -273,6 +280,7 @@ tr td:nth-child(2) {
   border-radius: 20p;
   background-color: #ede9fe;
   font-weight: 600;
+  color: #8d50ff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
 }
 
@@ -312,13 +320,8 @@ tr td:nth-child(2) {
 .winner img {
   width: 25px;
   height: 25px;
-  float: left;
   margin-right: 10px;
   margin-top: 4px;
-}
-
-.winner .title_winner {
-  float: left;
 }
 
 .winner .title_winner h3 {
@@ -614,4 +617,112 @@ tr td:nth-child(2) {
 .complete_your_setup .setup_button button:hover {
   color: white;
   background-color: #6a13cd;
+}
+
+.footer {
+  background-color: #0d1321;
+  color: #bfc5d1;
+  padding: 60px 0 20px 0;
+  font-size: 14px;
+}
+
+.footer_logo {
+  width: 30%;
+  margin-bottom: -20px;
+}
+
+.footer_logo img {
+  width: 30px;
+  height: 30px;
+  background-color: #8d51ff;
+  padding: 6px;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.footer_logo h3 {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.footer_logo p {
+  clear: both;
+  margin-top: 15px;
+  line-height: 1.5;
+  color: #bfc5d1;
+}
+
+.footer_social img {
+  background-color: #1b2232;
+  border-radius: 6px;
+  padding: 2px;
+  width: 25px;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+.footer_col {
+  width: 20%;
+  margin-left: 3%;
+}
+
+.footer_col h4 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer_col p {
+  margin: 6px 0;
+  color: #bfc5d1;
+}
+
+.footer_col p:hover {
+  color: #dde4f1;
+  cursor: pointer;
+}
+
+.footer hr {
+  border: 0.5px solid #2c3448;
+  margin: 30px 0;
+  clear: both;
+}
+
+.footer_bottom p {
+  color: #bfc5d1;
+  font-size: 13px;
+  margin: 0;
+}
+
+.footer_payment {
+  width: 20%;
+}
+
+.footer_payment img {
+  width: 30px;
+  height: 15px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+.footer_social .hover_img_babyblue:hover {
+  background-color: #4398d1;
+}
+
+.footer_social .hover_img_blue:hover {
+  background-color: blue;
+}
+
+.footer_social .hover_img_pink:hover {
+  background-color: rgb(247, 77, 105);
+}
+
+.footer_social .hover_img_red:hover {
+  background-color: red;
 }
