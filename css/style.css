@@ -24,7 +24,8 @@ body {
 .rating_overall .recommend,
 .rating_overall .quality_rating,
 .winner img,
-.winner .title_winner {
+.winner .title_winner,
+.setup_cards {
   float: left;
 }
 
@@ -512,4 +513,105 @@ tr td:nth-child(2) {
 
 .complete_your_setup .complete_title span {
   color: #916bfa;
+}
+
+.box_setup_cards {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.box_setup_cards .setup_cards {
+  width: 19%;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+  border: #e2e6e9 solid 1px;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.box_setup_cards .setup_cards .setup_cards_img img {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+
+.box_setup_cards .setup_cards .setup_cards_img img:hover {
+  transform: scale(1.04);
+}
+
+.box_setup_cards .setup_badge {
+  position: absolute;
+  left: 30px;
+  color: white;
+  background-color: #06baae;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 15px;
+  z-index: 10;
+}
+
+.setup_cards_title {
+  font-size: 15px;
+}
+
+.setup_cards_title h3 {
+  margin-block: 10px;
+}
+
+.setup_cards_title p {
+  margin-block: 10px 15px;
+}
+
+.setup_cards .setup_card_button,
+.setup_cards .setup_cards_price {
+  display: inline-block;
+}
+
+.setup_cards .setup_card_button {
+  margin-left: 90px;
+}
+
+.setup_cards .setup_card_button button {
+  color: white;
+  border-radius: 15px;
+  border: none;
+  background-color: #8a53ff;
+  padding: 7px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.setup_cards .setup_cards_price span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.complete_your_setup .setup_button {
+  text-align: center;
+}
+
+.complete_your_setup .setup_button button {
+  padding: 15px;
+  color: #6a13cd;
+  display: inline-block;
+  margin: 0 auto;
+  border: #6a13cd solid 1px;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 15%;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.complete_your_setup .setup_button button:hover {
+  color: white;
+  background-color: #6a13cd;
 }
