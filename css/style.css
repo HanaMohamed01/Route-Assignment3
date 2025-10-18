@@ -20,7 +20,11 @@ body {
 .say_rating,
 .profile_rating_cards,
 .img_profile,
-.profile_title {
+.profile_title,
+.rating_overall .recommend,
+.rating_overall .quality_rating,
+.winner img,
+.winner .title_winner {
   float: left;
 }
 
@@ -241,17 +245,13 @@ body {
   padding: 10px;
 }
 
-.bold_size_table {
-  font-size: 18px;
+.bold_size_table,
+.font_bold {
   font-weight: 600;
 }
 
 .center_text_table {
   text-align: center;
-}
-
-.font_bold {
-  font-weight: 600;
 }
 
 .font_color_orange {
@@ -299,10 +299,6 @@ tr td:nth-child(2) {
   font-size: 14px;
 }
 
-.table_our_product {
-  color: #8d50ff;
-}
-
 .winner {
   background-color: #ffffff;
   border-radius: 12px;
@@ -341,8 +337,6 @@ tr td:nth-child(2) {
   margin: 100px auto;
   position: relative;
   padding: 20px;
-  position: relative;
-
   overflow: visible;
 }
 
@@ -355,6 +349,7 @@ tr td:nth-child(2) {
   font-size: 14px;
   margin-bottom: 50px;
 }
+
 .what_our_customers_say .say_title span {
   color: #916bfa;
 }
@@ -375,32 +370,30 @@ tr td:nth-child(2) {
   padding: 10px;
 }
 
-.rating_overall .recommend,
-.rating_overall .quality_rating {
-  float: left;
-}
 .rating_overall {
   padding-top: 15px;
 }
+
 .rating_overall .recommend {
   padding-inline: 10px 75px;
 }
 
-.inline_gray {
-  display: inline-block;
-  width: 180px;
-  height: 10px;
-  background-color: gray;
-  border-radius: 20px;
-}
-
+.inline_gray,
 .inline_yellow {
   display: inline-block;
   height: 10px;
+  border-radius: 20px;
+}
+
+.inline_gray {
+  width: 180px;
+  background-color: gray;
+}
+
+.inline_yellow {
   background-color: #f2b002;
   width: 160px;
   position: absolute;
-  border-radius: 20px;
   left: 117px;
 }
 
@@ -488,4 +481,35 @@ tr td:nth-child(2) {
   margin-top: -130px;
   display: flex;
   flex-direction: column;
+}
+
+.cards .load_button {
+  margin: 20px 370px;
+  width: 15%;
+  border-radius: 20px;
+  padding: 13px;
+  color: white;
+  background-color: #8d51ff;
+  border: none;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+.complete_your_setup {
+  padding-block: 50px;
+  background-color: #f7f5ff;
+}
+
+.complete_your_setup .complete_title h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.complete_your_setup .complete_title p {
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+.complete_your_setup .complete_title span {
+  color: #916bfa;
 }
