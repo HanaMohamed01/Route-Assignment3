@@ -16,11 +16,17 @@ body {
 .navbar span,
 .navbar img,
 .hero__image,
-.hero__content {
+.hero__content,
+.say_rating,
+.profile_rating_cards,
+.img_profile,
+.profile_title {
   float: left;
 }
 
-.links {
+.links,
+.status_profile,
+.rating_cards {
   float: right;
 }
 
@@ -74,9 +80,9 @@ body {
 }
 
 .hero {
-  padding-block: 90px;
+  padding-block: 130px;
   position: relative;
-  margin-top: 180px;
+  margin-top: 120px;
 }
 
 .hero .hero__image img {
@@ -99,7 +105,7 @@ body {
 .hero .hero__image p {
   position: absolute;
   left: 40px;
-  top: 120px;
+  top: 155px;
   background-color: #8e51ff;
   color: white;
   padding: 7px;
@@ -195,10 +201,6 @@ body {
   border-radius: 10px;
   font-size: 13px;
   font-weight: 800;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 .hero .hero__content .parag_above_button {
@@ -272,6 +274,7 @@ tr td:nth-child(2) {
   font-weight: 600;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.1);
 }
+
 .table_our_product {
   background-color: #8d50ff;
   color: white;
@@ -306,7 +309,6 @@ tr td:nth-child(2) {
   padding: 15px 25px;
   width: 280px;
   margin: 50px auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border: 1px solid #e5e5e5;
 }
 
@@ -332,4 +334,158 @@ tr td:nth-child(2) {
   color: #00a651;
   font-size: 14px;
   margin: 3px 0 0;
+}
+
+.what_our_customers_say {
+  width: 60%;
+  margin: 100px auto;
+  position: relative;
+  padding: 20px;
+  position: relative;
+
+  overflow: visible;
+}
+
+.what_our_customers_say .say_title h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.what_our_customers_say .say_title p {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.what_our_customers_say .say_title span {
+  color: #916bfa;
+}
+
+.say_rating {
+  box-sizing: border-box;
+  width: 38%;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  position: sticky;
+  top: 60px;
+  margin-bottom: 50px;
+}
+
+.say_rating .say_rating_precent {
+  padding: 10px;
+}
+
+.rating_overall .recommend,
+.rating_overall .quality_rating {
+  float: left;
+}
+.rating_overall {
+  padding-top: 15px;
+}
+.rating_overall .recommend {
+  padding-inline: 10px 75px;
+}
+
+.inline_gray {
+  display: inline-block;
+  width: 180px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.inline_yellow {
+  display: inline-block;
+  height: 10px;
+  background-color: #f2b002;
+  width: 160px;
+  position: absolute;
+  border-radius: 20px;
+  left: 117px;
+}
+
+.say_rating_precent .rating_precent {
+  margin-bottom: 10px;
+}
+
+.say_rating .rating_title {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.border_bottom {
+  border-top: 1px solid #e5e5e5;
+}
+
+.recommend_precent {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.rating_cards {
+  position: relative;
+  margin-top: px;
+  padding: 28px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  width: 750px;
+  height: 200px;
+  margin: 10px 30px;
+}
+
+.rating_cards .profile_rating_cards .img_profile img {
+  width: 100%;
+  border-radius: 50%;
+  margin: 14px 0 0 -5px;
+  border: #5e2986 solid 1px;
+}
+
+.rating_cards .profile_rating_cards .img_profile {
+  width: 7%;
+}
+
+.rating_cards .profile_rating_cards .status_profile {
+  width: 30%;
+}
+
+.rating_cards .profile_title {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.rating_cards .profile_title p,
+.rating_cards .profile_title h3 {
+  margin: 5px;
+}
+
+.rating_cards .rating_profile_title p {
+  line-height: 1.7;
+}
+
+.rating_cards .status_profile .verified_profile {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: -10px;
+  color: #5e2986;
+  background-color: #ede9ff;
+  padding: 1px 6px;
+  border-radius: 20px;
+  width: 46%;
+}
+
+.rating_cards .status_profile .verified_time {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.rating_cards .status_profile {
+  margin-right: -80px;
+}
+
+.cards {
+  margin-top: -130px;
+  display: flex;
+  flex-direction: column;
 }
